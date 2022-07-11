@@ -16,10 +16,11 @@ class LeetCode
 
   def navigate(search)
     @driver.navigate.to 'https://www.google.com/'
+    sleep 10
     a=@driver.find_element(name: 'q')
     a.send_keys(search)
     a.send_keys(:enter)
-    sleep 5
+    sleep 15
     l_home('LeetCode - The World\'s Leading Online Programming ...')
     sleep 20
   end
