@@ -1,0 +1,7 @@
+form_entry:
+  name: ~full_name
+  email: ~email_address
+  address: ~state
+  phone_number: ~cell_phone
+  gender: ~randomize(['Male','Female','Other'])
+  comment: ~sentence(word_count = 20)
